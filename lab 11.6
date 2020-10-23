@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+	int x;
+	scanf_s("%d", &x);
+    if (x % 2 == 0)
+        printf("Chetnoye ");
+    else
+        printf("Nechetn ");
+    if (x < 10)
+        printf("Odnoznachnoye chislo");
+    else
+    {
+        if (x < 100)
+            printf("dvuhznachnoye chislo");
+        else
+            printf("Trehznachnoe");
+    }
+	return 0;
+}
