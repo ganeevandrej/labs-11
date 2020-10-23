@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+	int  A, B, C, s;
+	scanf_s("%d %d %d", &A, &B, &C);
+	if (A >= B) {
+		if (B >= C)
+			s = A + B;
+		else
+			s = A + C;
+	}
+	else
+		if (A >= C)
+			s = A + B;
+		else
+			s = B + C;
+	printf("%d", s);
+	return 0;
+}
